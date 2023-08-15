@@ -12,6 +12,4 @@ export default function ContactRow({ setSelectedContactId, contact }) {
             <td className="row-data">{contact.phone}</td>
         </tr>
     );
-
-
 }
