@@ -37,16 +37,11 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
                         <tr>
                             <td className="row-text">Username</td>
                             <td className="row-text">Name</td>
-                            <td className="row-text">Phone</td>
                             <td className="row-text">Email</td>
+                            <td className="row-text">Phone</td>
                             <td className="row-text">Website</td>
                         </tr>
                         <SingleContactRow key={contact.id} contact={contact} setSelectedContactId={setSelectedContactId}/>
-                        {selectedContactId && (
-                                <tr>
-
-                                </tr>
-                            )}
                     </tbody>
                 </table>
               ) : null}

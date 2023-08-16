@@ -21,6 +21,10 @@ table {
   width: 80%;
 }
 
+.table-single {
+  width: 100%;
+}
+
 table th {
   color: rgb(68, 33, 8);
   text-shadow: 1px 1px 10px rgb(82, 6, 6);
