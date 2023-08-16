@@ -12,8 +12,7 @@ const dummyContacts = [
   ];
 
 export default function ContactList({ setSelectedContactId }) {
-    // Empty array passed in useState to get rid of the dummyContact "clipping" in my table
-    const [contacts, setContacts] = useState([])
+    const [contacts, setContacts] = useState(dummyContacts)
     console.log("Num1 Contacts:", contacts)
     useEffect(() => {
         async function fetchContacts() {
