@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
-import ContactRow from './ContactRow';
+import SingleContactRow from './SingleContactRow';
 import CloseButton from './CloseButton'
 
 // Component that displays a table containing info of contact selected by Id using ContactRow and CloseButton component
@@ -10,7 +10,7 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
     useEffect(() => {
         async function fetchContactById() {
             try {
-                const response = await fetch(`http://fsa-async-await.herokuapp.com/api/workshop/guests/${selectedContactId}`);
+                const response = await fetch(`https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users/${selectedContactId}`);
                 const contactInfo = await response.json();
                 setContact(contactInfo);
                 console.log(contactInfo);
@@ -30,16 +30,23 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
                 <table className="table-single">
                     <thead>
                         <tr>
-                            <th colSpan="3">Contact Info</th>
+                            <th colSpan="5">Contact Info</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td className="row-text">Username</td>
                             <td className="row-text">Name</td>
                             <td className="row-text">Phone</td>
                             <td className="row-text">Email</td>
+                            <td className="row-text">Website</td>
                         </tr>
-                        <ContactRow key={contact.id} contact={contact} setSelectedContactId={setSelectedContactId}/>
+                        <SingleContactRow key={contact.id} contact={contact} setSelectedContactId={setSelectedContactId}/>
+                        {selectedContactId && (
+                                <tr>
+
+                                </tr>
+                            )}
                     </tbody>
                 </table>
               ) : null}

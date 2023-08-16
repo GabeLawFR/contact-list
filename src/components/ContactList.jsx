@@ -17,7 +17,7 @@ export default function ContactList({ setSelectedContactId }) {
     useEffect(() => {
         async function fetchContacts() {
             try {
-                const response = await fetch('http://fsa-async-await.herokuapp.com/api/workshop/guests');
+                const response = await fetch('https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users');
                 const result = await response.json();
                 console.log(result);
                 setContacts(result);

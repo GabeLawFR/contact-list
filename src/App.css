@@ -12,7 +12,7 @@
 }
 
 table {
-  margin: -20em auto;
+  margin: -10em auto;
   border: 3px solid rgb(135, 188, 234);
   border-collapse: collapse;
   padding: 20px;
@@ -49,11 +49,14 @@ table td {
   text-align: left;
   color: rgb(196, 229, 255);
   text-shadow: 1px 1px 1px black;
+  padding: 15px;
+  
 }
 
 .table-list .contact-row {
   cursor: pointer;
 }
+
 
 .close-button {
   background-color: chocolate;
