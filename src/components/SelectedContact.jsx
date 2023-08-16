@@ -35,9 +35,9 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="row-text">Name:</td>
-                            <td className="row-text">Phone:</td>
-                            <td className="row-text">Email:</td>
+                            <td className="row-text">Name</td>
+                            <td className="row-text">Phone</td>
+                            <td className="row-text">Email</td>
                         </tr>
                         <ContactRow key={contact.id} contact={contact} setSelectedContactId={setSelectedContactId}/>
                     </tbody>

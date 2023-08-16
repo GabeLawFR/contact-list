@@ -18,7 +18,7 @@ table {
   padding: 20px;
   margin-bottom: 10px;
   table-layout: fixed;
-  width: 100%;
+  width: 80%;
 }
 
 table th {
@@ -41,6 +41,7 @@ table td {
   text-align: center;
   color: rgb(195, 0, 255);
   text-shadow: 1px 1px 40px rgb(255, 255, 255);
+  font-size: 22px;
   font-weight: bolder;
 }
 
